@@ -1,7 +1,7 @@
 
 body {
     background-color: whitesmoke;
-    
+    margin: 0;
 }
 
 div {
@@ -19,9 +19,15 @@ header {
     border-radius: 10px;
 }
 
+footer{
+    background-color: #232233;
+    color: #f5f5f5;
+}
+
 
 .overheader {
     color: whitesmoke;
+    background-color: #5956E9;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,21 +37,79 @@ header {
 
 .page_1{
     background-image: url(Background_Image.png);
-    background-size: 2048px, 824px;
+    background-size: 2048px 824px;
     background-position-x: center;
+    display: flex;
+    justify-content: center;
 }
 
 .page_2{
     background-color: whitesmoke;
     background-image: none;
+    padding: 20px;
 }
 
 .page_3{
     background-image: url(Background_Image.png);
-    background-size: 2048px, 824px;
+    background-size: 2048px 824px;
     background-position-x: center;
     color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.page_4{
+    background-image: none;
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center ;
+
+    padding-bottom: 300px;
+}
+
+.menu-check {
+  display: none;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+  background-color: white;
+  position: absolute;
+  width: 50%;
+  border-radius: 5%;
+  list-style: none;
+}
+
+.mobile-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+
+.menu-check:checked ~ .mobile-menu {
+  display: flex;
+}
+
 
 .logo_box {
     height: 50px;
@@ -90,43 +154,18 @@ header {
 
 .info_box{
     height: 110px;
-    width: 343px;
+    width: 90%;
+    justify-self: center;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
     background-color: #efefef;
     color: black;
     border-radius: 10px;
 }
 
 .topnav{
-
   overflow: hidden;
 }
 
-
-.topnav a {
-  float: left;
-  display: block;
-  color:#323;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-.topnav a.active {
-  background-color: #5956E9;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
 
 .panel {
   padding: 0 18px;
@@ -152,6 +191,7 @@ header {
 
 .phone_2{
     width: 34%;
+    justify-self: center;
 }
 
 .phone_3{
@@ -160,12 +200,66 @@ header {
     border-radius: 40px;
 }
 
-.speech_bubble{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+.ssdsd{
+    display: flex;
+    
+}
+
+.icon_page_3{
+    color: #f5f5f5;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+}
+
+.team_tab{
+    height: 580px;
+    width: 343px;
+    margin: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social_link{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.team_photo{
+    border-radius: 50%;
+    padding: 5px;
+    border-color: #7572FF;
+    border-width: 8px;
+    border-style: dashed;
+}
+
+.contact{
+    width: 343px;
+    height: 310px;
+    background-color: #f5f5f5;
+    color: #232233;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+
+}
+
+.contact_icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #5956E9;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 
 
@@ -182,6 +276,7 @@ header {
     .overheader{
         visibility: visible;
     }
+    
 
     .rectangle_page_1{
         height: 375px;
