@@ -51,11 +51,11 @@
 
         <div class="rectangle_page_1">
             <div class="box_page_1">
-                <h2>A Great App Makes Your Life Better</h2>
+                <h2 style="color: #5956e9;">A GREAT APP MAKES YOUR LIFE BETTER</h2>
                 <p style="color: black;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                     officia consequat duis enim velit mollit.</p>
                 <h3>Download App Now</h3>
-                <a href=""><img src="assets/download_links.png" alt="download link" width="300px"></a>
+                <a href=""><img src="assets/download_links.png" alt="download link" class="download_links"></a>
             </div>
         </div>
 
@@ -69,9 +69,12 @@
             nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus.</p>
 
 
-        <img src="assets/phone_2.png" alt="phone_2" class="phone_2">
-        <div class="elipse"></div>
+        <div class="app_showcase">
+            <div class="elipse">
 
+                <img src="assets/phone_2.png" alt="phone 2" class="phone_2">
+            </div>
+        </div>
 
         <div class="info_box">
             <h3> ✓ CREATIVE DESIGN </h3>
@@ -128,7 +131,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
-        <divc lass="ssdsd">
+        <div class="ssdsd">
             <img src="assets/support.png" alt="support 24/7" class="icon_page_3">
             <h3>24/7 SUPPORT BY REAL PEOPLE</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -150,13 +153,12 @@
             </p>
 
             <div class="social_links">
-
                 <a href=""> 𝐟 </a>
-
+                <span class="bar">|</span>
                 <a href=""> 🅾 </a>
-
+                <span class="bar">|</span>
                 <a href=""> 𝕏 </a>
-
+                <span class="bar">|</span>
                 <a href=""> [ ▶︎ ] </a>
             </div>
         </div>
@@ -170,13 +172,12 @@
             </p>
 
             <div class="social_links">
-
                 <a href=""> 𝐟 </a>
-
+                <span class="bar">|</span>
                 <a href=""> 🅾 </a>
-
+                <span class="bar">|</span>
                 <a href=""> 𝕏 </a>
-
+                <span class="bar">|</span>
                 <a href=""> [ ▶︎ ] </a>
             </div>
         </div>
@@ -191,30 +192,35 @@
 
             <div class="social_links">
                 <a href=""> 𝐟 </a>
-
+                <span class="bar">|</span>
                 <a href=""> 🅾 </a>
-
+                <span class="bar">|</span>
                 <a href=""> 𝕏 </a>
-
+                <span class="bar">|</span>
                 <a href=""> [ ▶︎ ] </a>
             </div>
         </div>
     </div>
-
-    <footer>
+    <div style="display: flex; align-items: center; justify-content: center; background-color: whitesmoke;">
         <div class="contact">
             <div class="contact_icon">
                 ✉
             </div>
             <h3>INFO.DESIGN@GMAIL.COM</h3>
 
-
+            <span class="vertical_bar">|</span>
+            <hr class="horizontal_bar">
 
             <div class="contact_icon">
                 ✆
             </div>
-            <h4>+ 880 321 655 9985</h4>
+            <h3>+ 880 321 655 9985</h3>
         </div>
+        <div class="prefooter"></div>
+    </div>
+
+    <footer>
+
 
         <h2>LOGO</h2>
 
@@ -223,17 +229,23 @@
 
         <div>
             <a href=""> 𝐟 </a>
+            <span class="bar">|</span>
             <a href=""> 🅾 </a>
+            <span class="bar">|</span>
             <a href=""> 𝕏 </a>
+            <span class="bar">|</span>
             <a href=""> [ ▶︎ ] </a>
         </div>
 
         <h3>QUICK LINK</h3>
 
-        <a href="">About</a>
-        <a href="">Features</a>
-        <a href="">Screenshot</a>
-        <a href="">Blog</a>
+        <div style="display: flex; flex-direction: column; ">
+            <a href="">About</a>
+            <a href="">Features</a>
+            <a href="">Screenshot</a>
+            <a href="">Blog</a>
+        </div>
+
 
         <h3>NEWS LETTERS</h3>
         <p>Subscribe our newsletter to get our latest update & news</p>
@@ -242,6 +254,9 @@
             <input type="email" placeholder="Your email address" name="search">
             <button type="submit"></button>
         </form>
+
+
+         <hr class="footer_bar">
 
         <h5>© Copyright 2021 .Ojjomedia. All Right Reserved.</h5>
     </footer>
