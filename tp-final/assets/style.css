@@ -1,7 +1,10 @@
 body {
     background-color: whitesmoke;
     margin: 0;
+    font-family: "Josefin Sans", sans-serif;
 }
+
+
 
 div {
     flex-wrap: wrap;
@@ -233,7 +236,7 @@ footer {
     border-radius: 40px;
 }
 
-.ssdsd {
+.function_box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,12 +394,18 @@ footer {
     }
 
     .rectangle_page_1 {
-        height: 535px;
-        width: 570px;
+        height: 50%;
+        width: 50%;
+    }
+
+    .box_page_1{
+        height: 90%;
+        width: 100%;
+        font-size: x-large;
     }
 
     .phone_1 {
-        height: 725px;
+        height: 400px;
         width: auto;
     }
 
