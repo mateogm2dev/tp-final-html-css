@@ -10,21 +10,12 @@ div {
     flex-wrap: wrap;
 }
 
-header {
-    background-color: whitesmoke;
-    color: #323;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
 
-}
 
-footer {
+.footer_section {
     background-color: #232233;
     color: #f5f5f5;
+    display: block;
 }
 
 
@@ -37,6 +28,26 @@ footer {
     justify-content: space-around;
     visibility: hidden;
 }
+
+header {
+    display: block;
+
+}
+
+.header_bar {
+    background-color: whitesmoke;
+    color: #323;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.menu_pc {
+    display: none;
+}
+
 
 .page_1 {
     background-image: url(Background_Image.png);
@@ -53,7 +64,7 @@ footer {
     padding: 20px;
 }
 
-.page_3 {
+.features {
     background-image: url(Background_Image.png);
     background-size: 2048px 824px;
     background-position-x: center;
@@ -63,7 +74,7 @@ footer {
     justify-content: center;
 }
 
-.page_4 {
+.about_the_team {
     background-image: none;
     background-color: whitesmoke;
     display: flex;
@@ -152,13 +163,13 @@ footer {
     border-style: solid;
 }
 
-.app_showcase{
+.app_showcase {
     display: flex;
     justify-content: center;
 }
 
 
-.elipse{
+.elipse {
     position: relative;
     display: flex;
     width: 90%;
@@ -166,23 +177,22 @@ footer {
     margin-top: 10%;
 }
 
-.elipse::before{
+.elipse::before {
     content: "";
     position: absolute;
-    z-index: 0;
-    top: 400px;
-    left: 40px;
-    right: 88px;
-    bottom: 16px;
+    width: 70%;
+    height: 20px;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
     border-radius: 50%;
-    height: 20%;
-    box-shadow: 0 8px 10px rgba(59, 53, 53, 0.521);
+    box-shadow: 0 8px 10px rgba(59, 53, 53, .5);
 }
 
 .info_box {
     height: 110px;
     width: 90%;
-    justify-self: center;
+    margin: 0 auto;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.3);
     background-color: #efefef;
     color: black;
@@ -209,7 +219,7 @@ footer {
 
 }
 
-.download_links{
+.download_links {
     width: 300px;
     height: auto;
 }
@@ -219,7 +229,7 @@ footer {
     width: auto;
 }
 
-.phone_2{
+.phone_2 {
     display: flex;
     width: 90%;
     max-width: 400px;
@@ -240,7 +250,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .icon_page_3 {
@@ -249,6 +259,9 @@ footer {
     height: 50px;
     justify-self: center;
 }
+
+
+
 
 .team_tab {
     height: 580px;
@@ -267,6 +280,16 @@ footer {
     flex-wrap: wrap;
     align-items: center;
 
+    list-style-type: none;
+
+}
+
+
+
+
+.group_tabs {
+    display: flex;
+    justify-content: center;
 }
 
 .team_photo {
@@ -277,9 +300,9 @@ footer {
     border-style: dashed;
 }
 
-.bar{
+.bar {
     font-size: 24px;
-    color:#6C6C72;
+    color: #6C6C72;
 }
 
 .contact {
@@ -288,7 +311,7 @@ footer {
     width: 80%;
     padding: 5%;
     display: flex;
-    align-items: center;
+    margin: auto;
     justify-content: center;
     flex-direction: column;
     border-radius: 16px;
@@ -296,24 +319,25 @@ footer {
     position: relative;
     max-width: 400px;
 
-}
-
-.vertical_bar{
-        display: none;
 
 }
 
-.horizontal_bar{
-        display: flex;
-        width: 80%;
-        border: 1px solid black;
-        margin: 4%;
+.vertical_bar {
+    display: none;
+
 }
 
-.footer_bar{
+.horizontal_bar {
+    display: flex;
+    width: 80%;
+    border: 1px solid black;
+    margin: 4%;
+}
+
+.footer_bar {
     display: flex;
     width: 90%;
-    border: 1px solid whitesmoke;    
+    border: 1px solid whitesmoke;
 
 }
 
@@ -331,21 +355,24 @@ footer {
     background-color: #5956E9;
 }
 
-.prefooter{
+.prefooter {
     background-color: #232233;
-    position: absolute;
-    z-index: -1;
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 25%;
     overflow: hidden;
     transform: translate(0%, 50%);
-} 
+    align-self: center;
+    justify-self: center;
+
+}
 
 
 
 
 
-@media(min-width: 600px) {
+@media(min-width: 768px) {
     .page_1 {
         display: flex;
         justify-content: space-around;
@@ -362,14 +389,28 @@ footer {
         width: 40%;
     }
 
-    .box_page_1{
+    .box_page_1 {
         height: 40%;
         width: auto;
     }
 
-    .download_links{
+    .download_links {
         width: 90%;
         height: auto;
+    }
+
+
+    .group_tabs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .team_tab {
+        width: 25%;
+    }
+
+    .team_photo {
+        width: 80%;
     }
 
     .phone_1 {
@@ -380,9 +421,31 @@ footer {
     .phone_2 {
         width: 34%;
     }
+
+    .feature_row_left {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .feature_row_right {
+        flex: 1;
+        margin-right: 20px;
+    }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 992px) {
+
+    .menu_pc {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+
     .page_1 {
         display: flex;
         justify-content: space-around;
@@ -398,7 +461,7 @@ footer {
         width: 50%;
     }
 
-    .box_page_1{
+    .box_page_1 {
         height: 90%;
         width: 100%;
         font-size: x-large;

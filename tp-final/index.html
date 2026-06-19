@@ -9,34 +9,33 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="overheader">
-        <p>✉ info@yrouemail.com</p>
-        <p>✆ (480) 555-0103</p>
 
-        <div>
-            <a href=""> 𝐟 </a>
-            <a href=""> 🅾 </a>
-            <a href=""> 𝕏 </a>
-            <a href=""> [ ▶︎ ] </a>
-        </div>
-    </div>
     <header>
+        <div class="overheader">
+            <p>✉ info@yrouemail.com</p>
+            <p>✆ (480) 555-0103</p>
+
+            <div>
+                <a href=""> 𝐟 </a>
+                <a href=""> 🅾 </a>
+                <a href=""> 𝕏 </a>
+                <a href=""> [ ▶︎ ] </a>
+            </div>
+        </div>
 
 
-
-        <div>
+        <div class="header_bar">
             <input type="checkbox" id="menu-btn" class="menu-check" aria-hidden="true">
-
             <label for="menu-btn" class="hamburger-icon" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
             <ul class="mobile-menu">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
@@ -44,227 +43,281 @@
                 <li><a href="#team">TEAM</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
+
+            <a href="" class="menu_pc" id="home_link">HOME</a>
+
+            <a href="" class="menu_pc">ABOUT</a>
+
+            <a href="" class="menu_pc">FEATURES</a>
+
+            <div class="logo_box"><img src="assets/logo.png" alt="logo" class="logo"></div>
+
+            <a href="" class="menu_pc">TEAM</a>
+
+            <a href="" class="menu_pc">CONTACT</a>
+
+            <a href="" class="download_button">DOWNLOAD</a>
+
         </div>
 
-        <div class="logo_box"><img src="assets/logo.png" alt="logo" class="logo"></div>
 
-        <a href="" class="download_button">DOWNLOAD</a>
     </header>
 
-    <div class="page_1">
+    <main>
+        <section class="page_1">
 
-        <div class="rectangle_page_1">
-            <div class="box_page_1">
-                <h2 style="color: #5956e9;">A GREAT APP MAKES YOUR LIFE BETTER</h2>
-                <p style="color: black;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit.</p>
-                <h3>Download App Now</h3>
-                <a href=""><img src="assets/download_links.png" alt="download link" class="download_links"></a>
+            <div class="rectangle_page_1">
+                <div class="box_page_1">
+                    <h2 style="color: #5956e9;">A GREAT APP MAKES YOUR LIFE BETTER</h2>
+                    <p style="color: black;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat duis enim velit mollit.</p>
+                    <h3>Download App Now</h3>
+                    <a href=""><img src="assets/download_links.png" alt="download link" class="download_links"></a>
+                </div>
             </div>
-        </div>
 
-        <img src="assets/phone_1.png" alt="phone 1" class="phone_1">
-    </div>
+            <img src="assets/phone_1.png" alt="phone 1" class="phone_1">
+        </section>
 
-    <div class="page_2">
-        <h2>ABOUT OUR APP</h2>
+        <section class="page_2">
+            <h2>ABOUT OUR APP</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
-            nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+                nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus.</p>
 
 
-        <div class="app_showcase">
-            <div class="elipse">
+            <div class="app_showcase">
+                <div class="elipse">
 
-                <img src="assets/phone_2.png" alt="phone 2" class="phone_2">
+                    <img src="assets/phone_2.png" alt="phone 2" class="phone_2">
+                </div>
             </div>
-        </div>
 
-        <div class="info_box">
-            <h3> ✓ CREATIVE DESIGN </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="info_box">
-            <h3> ✓ EASY TO USE </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="info_box">
-            <h3> ✓ BEST USER EXPERIENCE </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-
-    <div class="page_3">
-        <h2>APP FEATURES</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
-
-        <div class="function_box">
-            <img src="assets/speach_bubble.png" alt="speach_bubble" class="icon_page_3">
-            <h3>FULL FREE CHAT</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="function_box">
-            <img src="assets/features.png" alt="features" class="icon_page_3">
-            <h3>UNLIMITER FEATURES</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="function_box">
-            <img src="assets/ui_design.png" alt="design" class="icon_page_3">
-            <h3>AWESOME DESIGN</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="function_box">
-            <img src="assets/phone_3.png" alt="phone_3" class="phone_3">
-        </div>
-
-
-        <div class="function_box">
-            <img src="assets/android_iso.png" alt="iso and android" class="icon_page_3">
-            <h3>ISO & ANDROID VERSION</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="function_box">
-            <img src="assets/retina.png" alt="retina" class="icon_page_3">
-            <h3>RETINA READY GRAPHICS</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="function_box">
-            <img src="assets/support.png" alt="support 24/7" class="icon_page_3">
-            <h3>24/7 SUPPORT BY REAL PEOPLE</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-    </div>
-
-    <div class="page_4">
-        <h2>OUR REATIVE TEAM</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
-
-        <div class="team_tab">
-            <img src="assets/team_1.jpg" alt="photo team" class="team_photo">
-
-            <h1>CARLA PRESS</h1>
-            <h3>APP DEVELOPER</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
-            </p>
-
-            <div class="social_links">
-                <a href=""> 𝐟 </a>
-                <span class="bar">|</span>
-                <a href=""> 🅾 </a>
-                <span class="bar">|</span>
-                <a href=""> 𝕏 </a>
-                <span class="bar">|</span>
-                <a href=""> [ ▶︎ ] </a>
+            <div class="info_box">
+                <h3> ✓ CREATIVE DESIGN </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </div>
-        <div class="team_tab">
-            <img src="assets/team_2.jpg" alt="photo team" class="team_photo">
 
-            <h1>CRAIG GOUSE</h1>
-            <h3>UI/ UX DESIGNER</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
-            </p>
-
-            <div class="social_links">
-                <a href=""> 𝐟 </a>
-                <span class="bar">|</span>
-                <a href=""> 🅾 </a>
-                <span class="bar">|</span>
-                <a href=""> 𝕏 </a>
-                <span class="bar">|</span>
-                <a href=""> [ ▶︎ ] </a>
+            <div class="info_box">
+                <h3> ✓ EASY TO USE </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </div>
-        <div class="team_tab">
-            <img src="assets/team_3.jpg" alt="photo team" class="team_photo">
 
-            <h1>JOCELYN SEPTIMUS</h1>
-            <h3>WEBSITE DEVELOPER</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.
-            </p>
-
-            <div class="social_links">
-                <a href=""> 𝐟 </a>
-                <span class="bar">|</span>
-                <a href=""> 🅾 </a>
-                <span class="bar">|</span>
-                <a href=""> 𝕏 </a>
-                <span class="bar">|</span>
-                <a href=""> [ ▶︎ ] </a>
+            <div class="info_box">
+                <h3> ✓ BEST USER EXPERIENCE </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </div>
-    </div>
-    <div style="display: flex; align-items: center; justify-content: center; background-color: whitesmoke;">
-        <div class="contact">
-            <div class="contact_icon">
-                ✉
-            </div>
-            <h3>INFO.DESIGN@GMAIL.COM</h3>
+        </section>
 
-            <span class="vertical_bar">|</span>
-            <hr class="horizontal_bar">
+        <section class="features">
+            <h2>APP FEATURES</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
 
-            <div class="contact_icon">
-                ✆
+            <div class="function_box">
+                <img src="assets/speach_bubble.png" alt="speach_bubble" class="icon_page_3">
+                <h3>FULL FREE CHAT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <h3>+ 880 321 655 9985</h3>
-        </div>
-        <div class="prefooter"></div>
-    </div>
+
+            <div>
+                <div class="feature_rows_left">
+                    <div class="function_box">
+                        <img src="assets/features.png" alt="features" class="icon_page_3">
+                        <h3>UNLIMITER FEATURES</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                    <div class="function_box">
+                        <img src="assets/ui_design.png" alt="design" class="icon_page_3">
+                        <h3>AWESOME DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="function_box">
+                    <img src="assets/phone_3.png" alt="phone_3" class="phone_3">
+                </div>
+
+                <div class="feature_rows_right">
+                    <div class="function_box">
+                        <img src="assets/android_iso.png" alt="iso and android" class="icon_page_3">
+                        <h3>ISO & ANDROID VERSION</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                    <div class="function_box">
+                        <img src="assets/retina.png" alt="retina" class="icon_page_3">
+                        <h3>RETINA READY GRAPHICS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="function_box">
+                <img src="assets/support.png" alt="support 24/7" class="icon_page_3">
+                <h3>24/7 SUPPORT BY REAL PEOPLE</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+        </section>
+
+        <section class="about_the_team">
+            <h2>OUR REATIVE TEAM</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
+
+
+            <div class="group_tabs">
+                <div class="team_tab">
+                    <img src="assets/team_1.jpg" alt="photo team" class="team_photo">
+
+                    <h1>CARLA PRESS</h1>
+                    <br>
+                    <h3>APP DEVELOPER</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+                        tellus
+                        vitae.
+                    </p>
+
+                    <ul class="social_links">
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team_tab">
+                    <img src="assets/team_2.jpg" alt="photo team" class="team_photo">
+
+                    <h1>CRAIG GOUSE</h1>
+                    <br>
+                    <h3>UI/ UX DESIGNER</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+                        tellus
+                        vitae.
+                    </p>
+
+                    <ul class="social_links">
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="team_tab">
+                    <img src="assets/team_3.jpg" alt="photo team" class="team_photo">
+
+                    <h1>JOCELYN SEPTIMUS</h1>
+                    <br>
+                    <h3>WEBSITE DEVELOPER</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+                        tellus
+                        vitae.
+                    </p>
+
+                    <ul class="social_links">
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+    </main>
+
+
 
     <footer>
+        <div class="prefooter">
+            <div class="contact">
+                <div class="contact_icon">
+                    ✉
+                </div>
+                <h3>INFO.DESIGN@GMAIL.COM</h3>
 
+                <span class="vertical_bar">|</span>
+                <hr class="horizontal_bar">
 
-        <h2>LOGO</h2>
+                <div class="contact_icon">
+                    ✆
+                </div>
+                <h3>+ 880 321 655 9985</h3>
+            </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
-            nullam lobortis enim.</p>
-
-        <div>
-            <a href=""> 𝐟 </a>
-            <span class="bar">|</span>
-            <a href=""> 🅾 </a>
-            <span class="bar">|</span>
-            <a href=""> 𝕏 </a>
-            <span class="bar">|</span>
-            <a href=""> [ ▶︎ ] </a>
         </div>
 
-        <h3>QUICK LINK</h3>
+        <div class="footer_section">
+            <h2>LOGO</h2>
 
-        <div style="display: flex; flex-direction: column; ">
-            <a href="">About</a>
-            <a href="">Features</a>
-            <a href="">Screenshot</a>
-            <a href="">Blog</a>
-        </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+                nullam lobortis enim.</p>
+
+            <div>
+                <a href=""> 𝐟 </a>
+                <span class="bar">|</span>
+                <a href=""> 🅾 </a>
+                <span class="bar">|</span>
+                <a href=""> 𝕏 </a>
+                <span class="bar">|</span>
+                <a href=""> [ ▶︎ ] </a>
+            </div>
+
+            <h3>QUICK LINK</h3>
+
+            <div>
+                <a href="">About</a>
+                <br>
+                <a href="">Features</a>
+                <br>
+                <a href="">Screenshot</a>
+                <br>
+                <a href="">Blog</a>
+            </div>
 
 
-        <h3>NEWS LETTERS</h3>
-        <p>Subscribe our newsletter to get our latest update & news</p>
+            <h3>NEWS LETTERS</h3>
+            <p>Subscribe our newsletter to get our latest update & news</p>
 
-        <form action="/action_page.php">
-            <input type="email" placeholder="Your email address" name="search">
-            <button type="submit"></button>
-        </form>
+            <form action="/action_page.php">
+                <input type="email" placeholder="Your email address" name="search">
+                <button type="submit"></button>
+            </form>
 
 
-         <hr class="footer_bar">
+            <hr class="footer_bar">
 
-        <h5>© Copyright 2021 .Ojjomedia. All Right Reserved.</h5>
+            <h5>© Copyright 2021 .Ojjomedia. All Right Reserved.</h5>
     </footer>
-
+    </div>
 
 </body>
 
